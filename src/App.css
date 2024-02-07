@@ -1,0 +1,109 @@
+/* Base styles */
+.user-form-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.user-form-container h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.user-form-container form {
+  display: flex;
+  flex-direction: column;
+}
+.test{
+  display: flex;
+}
+.user-form-container .image-container {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  justify-content: center;
+  object-fit: contain;
+  margin-bottom: 20px;
+}
+
+.user-form-container .image-container img {
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.user-form-container form div {
+  margin-bottom: 20px;
+}
+
+.user-form-container label {
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.user-form-container input[type="text"],
+.user-form-container select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.user-form-container select {
+  width: 100%;
+}
+
+.user-form-container .events-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.user-form-container .events-container select {
+  flex: 1;
+}
+
+.user-form-container button[type="submit"] {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.user-form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+.selected-events div {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 600px) {
+  .user-form-container {
+    max-width: 90%;
+    padding: 15px;
+  }
+
+  .user-form-container form div {
+    margin-bottom: 15px;
+  }
+
+  .user-form-container button[type="submit"] {
+    padding: 8px 15px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .user-form-container input[type="text"],
+  .user-form-container select {
+    padding: 8px;
+  }
+}
